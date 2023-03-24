@@ -1,11 +1,16 @@
-import "./App.css";
+import { Navbar, Welcome, Footer, Service, Transactions } from "./components";
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline text-center text-red-600
-      ">Hello world!</h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar/>
+        <Welcome/>
+      </div>
+      <Service/>
+      <Transactions/>
+      <Footer/>
     </div>
   );
 }
